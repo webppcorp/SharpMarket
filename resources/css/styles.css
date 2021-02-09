@@ -1,0 +1,42 @@
+/* ----------------------- Colors In Use --------------------- */
+/* 
+main color code : #ff2858
+dark shade : #cc002c
+light shade : #ff6687 
+*/
+
+/* ----------------------------- Fonts In Use ----------------------- */
+@font-face {
+    font-family: bBadr;
+    src: url("../../vendors/fonts/B_Badr.ttf");
+  }
+@font-face {
+    font-family: bBadrBold;
+    src: url("../../vendors/fonts/B_Badr_Bold.ttf");
+  }
+@font-face {
+    font-family: bZar;
+    src: url("../../vendors/fonts/B_Zar_0.ttf");
+  }
+@font-face {
+    font-family: bZarBold;
+    src: url("../../vendors/fonts/B_Zar_Bold_0.ttf");
+  }
+@font-face {
+    font-family: farNazanin;
+    src: url("../../vendors/fonts/Far_Nazanin.ttf");
+  }
+@font-face {
+    font-family: farTitr;
+    src: url("../../vendors/fonts/Far_TitrBd.ttf");
+  }
+
+  /*********************************************************************************************/
+  /*  ------------------------------------ General Setup ------------------------------------  */
+  /*********************************************************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
