@@ -7,36 +7,277 @@ light shade : #ff6687
 
 /* ----------------------------- Fonts In Use ----------------------- */
 @font-face {
-    font-family: bBadr;
-    src: url("../../vendors/fonts/B_Badr.ttf");
-  }
+	font-family: bBadr;
+	src: url("../../vendors/fonts/B_Badr.ttf");
+}
 @font-face {
-    font-family: bBadrBold;
-    src: url("../../vendors/fonts/B_Badr_Bold.ttf");
-  }
+	font-family: bBadrBold;
+	src: url("../../vendors/fonts/B_Badr_Bold.ttf");
+}
 @font-face {
-    font-family: bZar;
-    src: url("../../vendors/fonts/B_Zar_0.ttf");
-  }
+	font-family: bZar;
+	src: url("../../vendors/fonts/B_Zar_0.ttf");
+}
 @font-face {
-    font-family: bZarBold;
-    src: url("../../vendors/fonts/B_Zar_Bold_0.ttf");
-  }
+	font-family: bZarBold;
+	src: url("../../vendors/fonts/B_Zar_Bold_0.ttf");
+}
 @font-face {
-    font-family: farNazanin;
-    src: url("../../vendors/fonts/Far_Nazanin.ttf");
-  }
+	font-family: farNazanin;
+	src: url("../../vendors/fonts/Far_Nazanin.ttf");
+}
 @font-face {
-    font-family: farTitr;
-    src: url("../../vendors/fonts/Far_TitrBd.ttf");
-  }
+	font-family: farTitr;
+	src: url("../../vendors/fonts/Far_TitrBd.ttf");
+}
 
-  /*********************************************************************************************/
-  /*  ------------------------------------ General Setup ------------------------------------  */
-  /*********************************************************************************************/
+/*********************************************************************************************/
+/*  ------------------------------------ General Setup ------------------------------------  */
+/*********************************************************************************************/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: farNazanin;
+	font-size: 20px;
+	color: #333;
+}
+
+section {
+	padding: 30px 0 60px;
+}
+
+/*********************************************************************************************/
+/*  ------------------------------------ Resuable Component -------------------------------- */
+/*********************************************************************************************/
+
+h2 {
+	font-family: farTitr;
+	font-size: 140%;
+	background-color:#ff2858;
+	color: #fff;
+	padding: 6px 40px 6px 15px;
+	display: inline-block;
+	clip-path: polygon(0% 0%, 100% 0, 85% 50%, 100% 100%, 0% 100%);
+}
+
+.rows {
+	max-width: 94%;
+	margin: 0 auto;
+}
+
+/******************************************* Base Cards ***************************************/
+.cards {
+	width: 15%;
+	min-width: 268px;
+	margin: 1%;
+	border-radius: 15px;
+}
+
+.cards-title {
+	text-align: center;
+	padding: 50px 0;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.cards-title img {
+	height: auto;
+	width: 60%;
+	border-radius: 50%;
+}
+
+.cards-description {
+	margin: 10px 10%;
+	font-size: 90%;
+}
+
+.cards-pricing {
+	margin: 10px 10% 0;
+	padding: 0 0 30px;
+}
+
+.cards-pricing p {
+	text-align: left;
+}
+
+/**************************************** Slides Buttons *************************************/
+
+.slides-button {
+	position: relative;
+}
+
+.slides-button .slides-button-prev,
+.slides-button .slides-button-next {
+	top: -16rem;
+	border: 1px solid #cc002c;
+	padding: 5px 10px;
+	font-size: 120%;
+	font-weight: bold;
+	color: #cc002c;
+	outline: none;
+	transition: color 0.5s , background-color 0.5s;
+	font-family: "Arial";
+}
+
+.slides-button button:hover {
+	color: #fff;
+	background-color: #cc002c ;
+}
+
+.slides-button button:active {
+	color: #cc002c;
+	background-color: #fff
+}
+
+.slides-button-prev {
+	position: absolute;
+	left: 0;
+}
+
+.slides-button-next {
+	position: absolute;
+	right: 0;
+}
+
+/*********************************************************************************************/
+/*  ------------------------------------- Discount Section --------------------------------- */
+/*********************************************************************************************/
+
+.discount {
+	background-color: rgb(248, 248, 248);
+}
+
+.discount .rows:first-child {
+	margin-bottom: 40px;
+}
+
+.discount .cards {
+	box-shadow: 5px 5px 5px rgb(238, 238, 238);
+	background-color: #fff;
+}
+
+.discount .cards-title {
+	border-bottom: 1px solid rgb(238, 238, 238);
+	background-color: rgb(241, 241, 241);
+}
+
+.discount .special .cards-title {
+	background-color: #cc002c ;
+}
+
+
+.discount .cards-pricing p:first-child {
+	text-decoration: line-through;
+	color: rgb(199, 199, 199);
+}
+
+.discount .cards-pricing p:first-child span {
+	color: #fff;
+	background-color: #ff2858;
+	border-radius: 10px;
+	font-family: farTitr;
+	margin-right: 10px;
+	font-size: 80%;
+	padding: 2px 6px;
+	text-decoration: none;
+}
+
+.discount .special .cards-pricing p:first-child span {
+	background-color: #cc002c;
+}
+
+.discount .cards-pricing p:last-child {
+	font-family: farTitr;
+}
+
+.discount .cards-pricing p:last-child span {
+	margin-right: 10px;
+	font-family: farNazanin;
+}
+
+/*********************************************************************************************/
+/*  ------------------------------------- Sales Section ------------------------------------ */
+/*********************************************************************************************/
+
+.sales .rows:first-child {
+	margin-bottom: 40px;
+}
+
+.sales .cards {
+	box-shadow: 5px 5px 5px rgb(238, 238, 238);
+	background-color: rgb(250, 250, 250);
+}
+
+.sales .cards-title {
+	border-bottom: 1px solid rgb(238, 238, 238);
+	background-color: rgb(241, 241, 241);
+}
+
+.sales .cards-pricing p {
+	font-family: farTitr;
+}
+
+.sales .cards-pricing p span {
+	margin-right: 10px;
+	font-family: farNazanin;
+}
+
+/*********************************************************************************************/
+/*  ------------------------------------- Product Section ---------------------------------- */
+/*********************************************************************************************/
+
+.products {
+	padding: 0;
+}
+
+.products-section {
+	width: 100%;
+	padding: 30px 0;
+}
+
+.products [class*="col"] {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.products-section:nth-of-type(odd) [class*="col"]:first-child {
+	align-items: center;
+}
+
+.products-section:nth-of-type(even) [class*="col"]:first-child {
+	align-items: flex-end;
+}
+
+.products-section:nth-of-type(odd) {
+	background-color: #ff2858;
+	color: #fff;
+}
+
+.products-section:nth-of-type(even) {
+	background-color: #fff;
+	color: #ff2858;
+}
+
+.products-image {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+}
+
+.products-heading {
+	font-size: 140%;
+	font-family: farTitr;
+}
+
+.products-paragraph {
+	width: 60%;
+	font-size: 110%;
+	text-align: justify;
+	margin-top: 20px;
 }
