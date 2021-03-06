@@ -75,6 +75,7 @@ h2 {
 .cards {
 	width: 15%;
 	min-width: 268px;
+	height: 399.484px;
 	margin: 1%;
 	border-radius: 15px;
 }
@@ -161,6 +162,7 @@ h2 {
 .discount .cards {
 	box-shadow: 5px 5px 5px rgb(238, 238, 238);
 	background-color: #fff;
+	height: 445.484px;
 }
 
 .discount .cards-title {
@@ -172,13 +174,14 @@ h2 {
 	background-color: #cc002c;
 }
 
-
-.discount .cards-pricing p:first-child {
-	text-decoration: line-through;
-	color: rgb(199, 199, 199);
+.price-cont {
+	height: 30px;
+	margin-bottom: 1rem;
 }
 
-.discount .cards-pricing p:first-child span {
+.off-percent {
+	float: left;
+	margin-right: 10px;
 	color: #fff;
 	background-color: #ff2858;
 	border-radius: 10px;
@@ -187,19 +190,34 @@ h2 {
 	font-size: 80%;
 	padding: 2px 6px;
 	text-decoration: none;
+	margin-bottom: 1rem;
 }
 
-.discount .special .cards-pricing p:first-child span {
-	background-color: #cc002c;
+.last-price {
+	float: left;
+	text-decoration: line-through;
+	color: rgb(199, 199, 199);
+	margin-bottom: 16px;
 }
 
-.discount .cards-pricing p:last-child {
+.real-price-cont {
+	float: left;
+	height: 30px;
+	margin-bottom: 1rem;
+}
+
+.currency {
+	float: left;
+}
+
+.real-price {
+	float: left;
 	font-family: farTitr;
+	padding: 0 0 0 5px;
 }
 
-.discount .cards-pricing p:last-child span {
-	margin-right: 10px;
-	font-family: farNazanin;
+.special-off {
+	background-color: #cc002c;
 }
 
 /*********************************************************************************************/
