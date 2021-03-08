@@ -14,10 +14,10 @@ const glideOption = {
       perView: 3
     },
     992: {
-      perView: 4
+      perView: 3
     },
     768: {
-      perView: 3
+      perView: 2
     },
     576: {
       perView: 1,
