@@ -75,7 +75,7 @@ h2 {
 .cards {
 	width: 15%;
 	min-width: 268px;
-	height: 399.484px;
+	/* height: 399.484px; */
 	margin: 1%;
 	border-radius: 15px;
 }
@@ -96,6 +96,10 @@ h2 {
 .cards-description {
 	margin: 10px 10%;
 	font-size: 90%;
+}
+
+.cards-description p {
+	max-height: 55px ;
 }
 
 .cards-pricing {
@@ -162,7 +166,7 @@ h2 {
 .discount .cards {
 	box-shadow: 5px 5px 5px rgb(238, 238, 238);
 	background-color: #fff;
-	height: 445.484px;
+	/* height: 445.484px; */
 }
 
 .discount .cards-title {
@@ -172,6 +176,10 @@ h2 {
 
 .discount .special .cards-title {
 	background-color: #cc002c;
+}
+
+.discount .cards-pricing {
+	padding-bottom: 50px;
 }
 
 .price-cont {
