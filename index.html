@@ -7,6 +7,7 @@
     <title>#Market</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://www.webretailer.com/wp-content/uploads/2020/12/cropped-Web-Retailer-icon-gray-outline-512-32x32.png" sizes="32x32">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.rtl.min.css" integrity="sha384-4dNpRvNX0c/TdYEbYup8qbjvjaMrgUPh+g4I03CnNtANuv+VAvPL6LqdwzZKV38G" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -15,9 +16,97 @@
     <link rel="stylesheet" href="resources/css/styles.css">
     <link rel="stylesheet" href="resources/css/queries.css">
     <link rel="icon" href="">
+      <!-- Refrences for W3SCHOOL icons -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+     <!-- MAIN NAVBAR for desktop -->           
+          <div id="thinline1" class="thinline">
+            
+          </div>
+          <div id="mainnav-dskt" class="mainnavdskt">
+            <div class="thinline2">
+    
+            </div>
+            <div class="mainnavdskt-container">
+              <div class="mainnavdskt-wrap">
+                <div class="mainnavdskt-wrap-logo">
+                  <a href="#">
+                    <img class="navlogo" src="resources/img/logo-red.svg" alt="شارپ مارکت">
+                  </a>
+                </div>
+                <div class="mainnavdskt-wrap-searchsection">
+                  <div class="searchsection-container">
+                    <div class="searchsection-container-searchbox">
+                      <input class="searchbox-inside" type="text" placeholder="جستو جو کنید">
+                      <div class="searchbtn-section">
+                        <button class="searchbtn-button">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mainnavdskt-wrap-loginsection">
+                  <a class="loginsection-container" href="#">
+                    <span class="loginsection-container-logo">
+                      <img class="size" src="resources/img/person-circle.svg" alt="">
+                    </span>
+                    <span class="loginsection-container-text">
+                      ورود / ثبت نام
+                    </span>
+                  </a>
+                </div>
+                <div class="mainnavdskt-wrap-shopsection">
+                  <a class="shopsection-container" href="#">
+                    <img class="size2" src="resources/img/cart-fill.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="category" class="mainnavdskt-categorysection"> 
+            <div class="categorysection-wrap">
+              <li>
+                <a class="categorysection-wrap-menu" href="#">
+                <i class="w3-xlarge fa fa-home"></i>
+                </a>  
+              </li>
+              <li>
+                <a class="categorysection-wrap-menu" href="#">لبنیات </a>
+              </li>
+              <li>
+                <a class="categorysection-wrap-menu" href="#">نوشیدنی و دمنوش ها</a>
+              </li>
+              <li>
+                <a class="categorysection-wrap-menu" href="#">میوه و سبزیجات</a>
+              </li>
+              <li>
+                <a class="categorysection-wrap-menu" href="#">شیرینی و تنقلات</a>
+              </li>
+              <li>
+                <a class="categorysection-wrap-menu" href="#">شوینده و بهداشتی</a>
+              </li>
+              <li>
+                <a class="categorysection-wrap-menu" href="#">لوازم تحریر و اداری</a>
+              </li>
+              <li>
+                <a class="categorysection-wrap-menu" href="#">اسباب بازی</a>
+              </li>
+            </div>
+          </div>
+    <!-- Responsive navbar -->
+          <div id="mainnav-res" class="mainnavres">
+            <div class="comingsoon">
+              <div>این قسمت بزودی تکمیل می گردد</div>
+            </div>
+          </div>
+        </nav>
+    </header>
     <div class="main-body">
         <section class="discount">
 
@@ -759,6 +848,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="resources\js\app.js" async defer></script>
+    <script src="resources\js\navresponsive.js" async defer></script>
 </body>
 
 </html>
